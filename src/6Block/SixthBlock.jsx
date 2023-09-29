@@ -185,8 +185,8 @@ function SixthBlock() {
                     <img
                       src={
                         btnActiveS === 0
-                          ? "assets/img/arrow1.png"
-                          : "assets/img/arrow2.png"
+                          ? "../assets/img/arrow1.png"
+                          : "../assets/img/arrow2.png"
                       }
                       alt=""
                     />{" "}
