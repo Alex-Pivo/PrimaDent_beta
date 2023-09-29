@@ -1,0 +1,337 @@
+.footer {
+  width: 100%;
+  height: 380px;
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  .info {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .number {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 59px;
+      color: #f9f9f9;
+      text-decoration: none;
+    }
+    .text {
+      width: 560px;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #f9f9f9;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .mailTime {
+      width: 400px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #f9f9f9;
+    }
+  }
+  .links {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    a {
+      width: 122px;
+      height: 122px;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .telega {
+      background: url("../assets/img/telega.svg");
+      background-position: center;
+      background-size: cover;
+    }
+    .insta {
+      background: url("../assets/img/insta.svg");
+      background-position: center;
+      background-size: cover;
+    }
+    .facebook {
+      background: url("../assets/img/facebook.svg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .mailTimeInvis {
+    display: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #f9f9f9;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    height: 380px;
+    padding: 30px;
+    .info {
+      width: 46%;
+      height: 100%;
+      .number {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      .text {
+        width: 100%;
+        font-size: 14px;
+      }
+      .mailTime {
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+    .links {
+      width: 46%;
+      height: 100%;
+      a {
+        width: 90px;
+        height: 90px;
+        margin-left: 30px;
+      }
+      .telega {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .insta {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .facebook {
+        // background-position: center;
+        // background-size: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    height: 558px;
+    padding: 0px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .info {
+      width: 91.4%;
+      height: 343px;
+      margin: 0 auto;
+      .number {
+        font-size: 34px;
+        line-height: 41.45px;
+      }
+      .text {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+      .mailTime {
+        display: none;
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+    .links {
+      width: 100%;
+      height: 79.08px;
+      justify-content: flex-start;
+      margin-top: 20px;
+      a {
+        width: 79.08px;
+        height: 79.08px;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .telega {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .insta {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .facebook {
+        // background-position: center;
+        // background-size: contain;
+      }
+    }
+
+    .mailTimeInvis {
+      display: none;
+      margin-top: 10px;
+      width: 200px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .mail {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .time {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .footer {
+    height: 558px;
+    padding: 0px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .info {
+      width: 91.4%;
+      height: 343px;
+      margin: 0 auto;
+      .number {
+        font-size: 34px;
+        line-height: 41.45px;
+      }
+      .text {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+      }
+      .mailTime {
+        display: none;
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+    .links {
+      width: 100%;
+      height: 79.08px;
+      justify-content: flex-start;
+      margin-top: 20px;
+      a {
+        width: 79.08px;
+        height: 79.08px;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .telega {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .insta {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .facebook {
+        // background-position: center;
+        // background-size: contain;
+      }
+    }
+
+    .mailTimeInvis {
+      display: none;
+      margin-top: 10px;
+      width: 200px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .mail {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .time {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media (max-width: 331px) {
+  .footer {
+    .links {
+      width: 80%;
+      height: 70px;
+      justify-content: flex-start;
+      margin-top: 20px;
+      a {
+        width: 69px;
+        height: 69px;
+        margin-left: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .telega {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .insta {
+        // background-position: center;
+        // background-size: contain;
+      }
+      .facebook {
+        // background-position: center;
+        // background-size: contain;
+      }
+    }
+
+    .mailTimeInvis {
+      display: none;
+      margin-top: 10px;
+      width: 200px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .mail {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .time {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
