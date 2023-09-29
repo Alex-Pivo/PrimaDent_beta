@@ -2,6 +2,21 @@ import style from "../css/portfolio.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import picLeft1 from "/src/4Block/tooth/2.png";
+import picRight1 from "/src/4Block/tooth/11.png";
+
+import picLeft2 from "/src/4Block/tooth/34.png";
+import picRight2 from "/src/4Block/tooth/311.png";
+
+import picLeft3 from "/src/4Block/tooth/6.png";
+import picRight3 from "/src/4Block/tooth/51.png";
+
+import picLeft4 from "/src/4Block/tooth/48.png";
+import picRight4 from "/src/4Block/tooth/7.png";
+
+const pics = [picLeft1, picLeft2, picLeft3, picLeft4];
+const pics2 = [picRight1, picRight2, picRight3, picRight4];
+
 const textAnimation = {
   hidden: {
     y: -50,
@@ -59,7 +74,7 @@ function Tooth({ tooth }) {
           <div
             className={style.photoLeft}
             style={{
-              backgroundImage: `url("${tooth.pathLeft}")`,
+              backgroundImage: `url("${pics[tooth.id - 1]}")`,
             }}
           >
             <div
@@ -71,7 +86,7 @@ function Tooth({ tooth }) {
               <div
                 className={style.photoTooth}
                 style={{
-                  backgroundImage: `url("${tooth.pathRight}")`,
+                  backgroundImage: `url("${pics2[tooth.id - 1]}")`,
                 }}
               ></div>
             </div>
