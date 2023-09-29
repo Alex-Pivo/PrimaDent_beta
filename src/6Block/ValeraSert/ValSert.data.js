@@ -1,11 +1,11 @@
 export const valSerts = [
   {
     id: 1,
-    path: "../src/6Block/ValeraSert/1.png",
+    path: "/src/6Block/ValeraSert/1.png",
   },
   {
     id: 2,
-    path: "../src/6Block/ValeraSert/2.png",
+    path: "/src/6Block/ValeraSert/2.png",
   },
   {
     id: 3,
