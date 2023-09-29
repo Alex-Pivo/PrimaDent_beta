@@ -10,21 +10,6 @@ import pic4 from "/src/2Block/cards/img/mono.svg";
 
 const pics = [pic1, pic2, pic3, pic4];
 
-// import pics from [
-//   {
-//     pic1: "/src/2Block/cards/img/macbook.svg",
-//   },
-//   {
-//     pic2: "/src/2Block/cards/img/human.svg",
-//   },
-//   {
-//     pic3: "/src/2Block/cards/img/book.svg",
-//   },
-//   {
-//     pic4: "/src/2Block/cards/img/mono.svg",
-//   },
-// ];
-
 const blocksAnimation = {
   hidden: {
     y: -50,
@@ -38,13 +23,6 @@ const blocksAnimation = {
 };
 
 function Card() {
-  let [active, setActive] = useState();
-  const pathes = [
-    "../src/2Block/cards/img/macbook.svg",
-    "../src/2Block/cards/img/human.svg",
-    "../src/2Block/cards/img/book.svg",
-    "../src/2Block/cards/img/mono.svg",
-  ];
   return (
     <>
       <motion.div className={style.container__cards}>

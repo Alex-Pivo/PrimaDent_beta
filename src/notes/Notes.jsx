@@ -3,6 +3,11 @@ import axios from "axios";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+import pF1 from "/src/assets/img/Flag.svg";
+import pF2 from "/src/8Block/flags/Slovakia.svg";
+import pF3 from "/src/8Block/flags/Czech.svg";
+import pF4 from "/src/8Block/flags/Hungary.svg";
+
 const textAnimation = {
   hidden: {
     y: -50,
@@ -25,16 +30,16 @@ function Notes() {
   let code;
 
   if (flag === 0) {
-    pathFlag = "../src/assets/img/Flag.svg";
+    pathFlag = pF1;
     code = "+380";
   } else if (flag === 1) {
-    pathFlag = "../src/8Block/flags/Slovakia.svg";
+    pathFlag = pF2;
     code = "+421";
   } else if (flag === 2) {
-    pathFlag = "../src/8Block/flags/Czech.svg";
+    pathFlag = pF3;
     code = "+420";
   } else if (flag === 3) {
-    pathFlag = "../src/8Block/flags/Hungary.svg";
+    pathFlag = pF4;
     code = "+36";
   }
 

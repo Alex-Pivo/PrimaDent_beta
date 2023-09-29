@@ -8,6 +8,65 @@ import { motion } from "framer-motion";
 import arrow1 from "/src/assets/img/arrow1.png";
 import arrow2 from "/src/assets/img/arrow2.png";
 
+import MaksSert1 from "/src/6Block/MaksSert/1.png";
+import MaksSert2 from "/src/6Block/MaksSert/2.png";
+import MaksSert3 from "/src/6Block/MaksSert/3.png";
+import MaksSert4 from "/src/6Block/MaksSert/4.png";
+import MaksSert5 from "/src/6Block/MaksSert/5.png";
+import MaksSert6 from "/src/6Block/MaksSert/6.png";
+import MaksSert7 from "/src/6Block/MaksSert/7.png";
+import MaksSert8 from "/src/6Block/MaksSert/8.png";
+import MaksSert9 from "/src/6Block/MaksSert/9.png";
+import MaksSert10 from "/src/6Block/MaksSert/10.png";
+import MaksSert11 from "/src/6Block/MaksSert/11.png";
+import MaksSert12 from "/src/6Block/MaksSert/12.png";
+
+const picsMax = [
+  MaksSert1,
+  MaksSert2,
+  MaksSert3,
+  MaksSert4,
+  MaksSert5,
+  MaksSert6,
+  MaksSert7,
+  MaksSert8,
+  MaksSert9,
+  MaksSert10,
+  MaksSert11,
+  MaksSert12,
+];
+
+import gal1 from "/src/6Block/Gallery/1.png";
+import gal2 from "/src/6Block/Gallery/2.png";
+import gal3 from "/src/6Block/Gallery/3.png";
+import gal4 from "/src/6Block/Gallery/4.png";
+import gal5 from "/src/6Block/Gallery/5.png";
+import gal6 from "/src/6Block/Gallery/6.png";
+import gal7 from "/src/6Block/Gallery/7.png";
+import gal8 from "/src/6Block/Gallery/8.png";
+import gal9 from "/src/6Block/Gallery/9.png";
+import gal10 from "/src/6Block/Gallery/10.png";
+
+const pics = [gal1, gal2, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10];
+
+import ValeraSert1 from "/src/6Block/ValeraSert/1.png";
+import ValeraSert2 from "/src/6Block/ValeraSert/2.png";
+import ValeraSert3 from "/src/6Block/ValeraSert/3.png";
+import ValeraSert4 from "/src/6Block/ValeraSert/4.jpg";
+import ValeraSert5 from "/src/6Block/ValeraSert/5.jpg";
+import ValeraSert6 from "/src/6Block/ValeraSert/6.png";
+import ValeraSert7 from "/src/6Block/ValeraSert/7.png";
+
+const picsVal = [
+  ValeraSert1,
+  ValeraSert2,
+  ValeraSert3,
+  ValeraSert4,
+  ValeraSert5,
+  ValeraSert6,
+  ValeraSert7,
+];
+
 const textAnimation = {
   hidden: {
     y: -50,
@@ -107,7 +166,7 @@ function SixthBlock() {
                   {serts.map((sert, index) => (
                     <img
                       key={sert.id}
-                      src={sert.path}
+                      src={picsMax[sert.id]}
                       className={style.image}
                       alt=""
                     />
@@ -121,7 +180,7 @@ function SixthBlock() {
                   {photos.map((photo) => (
                     <img
                       key={photo.id}
-                      src={photo.path}
+                      src={pics[photo.id]}
                       className={style.image}
                       alt=""
                     />
@@ -191,7 +250,7 @@ function SixthBlock() {
                   {valSerts.map((valSert, index) => (
                     <img
                       key={valSert.id}
-                      src={valSert.path}
+                      src={picsVal[valSert.id]}
                       className={style.image}
                       alt=""
                     />
