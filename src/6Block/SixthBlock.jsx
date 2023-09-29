@@ -178,14 +178,7 @@ function SixthBlock() {
                     onClick={() => setBtnActiveS((btnActiveS = 0))}
                   >
                     {" "}
-                    <img
-                      src={
-                        btnActiveS === 0
-                          ? "../src/assets/img/arrow1.png"
-                          : "../src/assets/img/arrow2.png"
-                      }
-                      alt=""
-                    />{" "}
+                    <img src={btnActiveS === 0 ? arrow1 : arrow2} alt="" />{" "}
                   </button>
                 </motion.div>
                 <div
