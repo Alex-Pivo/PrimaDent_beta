@@ -1,6 +1,8 @@
 import style from "../css/thirdBlock.module.css";
 import { motion } from "framer-motion";
 
+import pathPhoto from "/src/assets/img/Photo.png";
+
 const textAnimation = {
   hidden: {
     y: -50,
@@ -68,7 +70,7 @@ function ThirdBlock() {
                 </motion.p>
               </div>
               <motion.img
-                src="/src/assets/img/Photo.png"
+                src={pathPhoto}
                 alt=""
                 custom={3}
                 variants={textAnimation}

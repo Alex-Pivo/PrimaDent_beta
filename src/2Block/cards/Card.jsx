@@ -14,6 +14,13 @@ const blocksAnimation = {
   }),
 };
 
+const pathes = [
+  "/src/2Block/cards/img/macbook.svg",
+  "/src/2Block/cards/img/human.svg",
+  "/src/2Block/cards/img/book.svg",
+  "/src/2Block/cards/img/mono.svg",
+];
+
 function Card() {
   return (
     <>
@@ -26,13 +33,7 @@ function Card() {
             className={style.card}
           >
             <div className={style.pic__container}>
-              <img
-                className={style.pic}
-                // style={{
-                //   backgroundImage: `url(${card.image})`,
-                // }}
-                src={card.image}
-              />
+              <img className={style.pic} src={pathes[card.id - 1]} />
             </div>
             <h4 className={style.card__title}>{card.title}</h4>
             <p className={style.card__text}>{card.text}</p>
