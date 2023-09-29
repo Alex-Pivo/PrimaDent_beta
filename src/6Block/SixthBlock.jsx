@@ -5,6 +5,9 @@ import { photos } from "./Gallery/gal.data.js";
 import style from "../css/sixthBlock.module.css";
 import { motion } from "framer-motion";
 
+import arrow1 from "/src/assets/img/arrow1.png";
+import arrow2 from "/src/assets/img/arrow2.png";
+
 const textAnimation = {
   hidden: {
     y: -50,
@@ -91,14 +94,7 @@ function SixthBlock() {
                     onClick={() => setBtnActive((btnActive = 0))}
                   >
                     {" "}
-                    <img
-                      src={
-                        btnActive === 0
-                          ? "/src/assets/img/arrow1.png"
-                          : "/src/assets/img/arrow2.png"
-                      }
-                      alt=""
-                    />{" "}
+                    <img src={btnActive === 0 ? arrow1 : arrow2} alt="" />{" "}
                   </motion.button>
                 </motion.div>
                 <div
@@ -185,8 +181,8 @@ function SixthBlock() {
                     <img
                       src={
                         btnActiveS === 0
-                          ? "../assets/img/arrow1.png"
-                          : "../assets/img/arrow2.png"
+                          ? "../src/assets/img/arrow1.png"
+                          : "../src/assets/img/arrow2.png"
                       }
                       alt=""
                     />{" "}
