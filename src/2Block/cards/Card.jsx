@@ -3,12 +3,14 @@ import { cards } from "./cards.data.js";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-// import pic1 from "/src/2Block/cards/img/macbook.svg";
-// import pic2 from "/src/2Block/cards/img/human.svg";
-// import pic3 from "/src/2Block/cards/img/book.svg";
-// import pic4 from "/src/2Block/cards/img/mono.svg";
+import pic1 from "/src/2Block/cards/img/macbook.svg";
+import pic2 from "/src/2Block/cards/img/human.svg";
+import pic3 from "/src/2Block/cards/img/book.svg";
+import pic4 from "/src/2Block/cards/img/mono.svg";
 
-// import {pics} from [
+const pics = [pic1, pic2, pic3, pic4];
+
+// import pics from [
 //   {
 //     pic1: "/src/2Block/cards/img/macbook.svg",
 //   },
@@ -54,7 +56,7 @@ function Card() {
             className={style.card}
           >
             <div className={style.pic__container}>
-              <img className={style.pic} src={card.image} />
+              <img className={style.pic} src={pics[card.id - 1]} />
             </div>
             <h4 className={style.card__title}>{card.title}</h4>
             <p className={style.card__text}>{card.text}</p>
