@@ -166,7 +166,7 @@ function SixthBlock() {
                   {serts.map((sert, index) => (
                     <img
                       key={sert.id}
-                      src={picsMax[sert.id]}
+                      src={picsMax[sert.id - 1]}
                       className={style.image}
                       alt=""
                     />
@@ -180,7 +180,7 @@ function SixthBlock() {
                   {photos.map((photo) => (
                     <img
                       key={photo.id}
-                      src={pics[photo.id]}
+                      src={pics[photo.id - 1]}
                       className={style.image}
                       alt=""
                     />
@@ -250,7 +250,7 @@ function SixthBlock() {
                   {valSerts.map((valSert, index) => (
                     <img
                       key={valSert.id}
-                      src={picsVal[valSert.id]}
+                      src={picsVal[valSert.id - 1]}
                       className={style.image}
                       alt=""
                     />
