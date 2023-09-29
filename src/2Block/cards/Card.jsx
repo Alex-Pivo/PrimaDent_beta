@@ -14,14 +14,13 @@ const blocksAnimation = {
   }),
 };
 
-const pathes = [
-  "../src/2Block/cards/img/macbook.svg",
-  "../src/2Block/cards/img/human.svg",
-  "../src/2Block/cards/img/book.svg",
-  "../src/2Block/cards/img/mono.svg",
-];
-
 function Card() {
+  const pathes = [
+    "../src/2Block/cards/img/macbook.svg",
+    "../src/2Block/cards/img/human.svg",
+    "../src/2Block/cards/img/book.svg",
+    "../src/2Block/cards/img/mono.svg",
+  ];
   return (
     <>
       <motion.div className={style.container__cards}>
