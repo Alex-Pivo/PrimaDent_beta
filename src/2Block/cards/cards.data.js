@@ -3,7 +3,7 @@ export const cards = [
     id: 1,
     title: "Цифрові технології",
     text: "Що дає можливість приміряти віртуально посмішку або ж виготовити ваші майбутні коронки чи вініри за 1 день",
-    image: "/img/macbook.svg",
+    image: "/src/2Block/cards/img/macbook.svg",
   },
   {
     id: 2,

@@ -26,12 +26,13 @@ function Card() {
             className={style.card}
           >
             <div className={style.pic__container}>
-              <div
+              <img
                 className={style.pic}
-                style={{
-                  backgroundImage: `url(${card.image})`,
-                }}
-              ></div>
+                // style={{
+                //   backgroundImage: `url(${card.image})`,
+                // }}
+                src={card.image}
+              />
             </div>
             <h4 className={style.card__title}>{card.title}</h4>
             <p className={style.card__text}>{card.text}</p>
