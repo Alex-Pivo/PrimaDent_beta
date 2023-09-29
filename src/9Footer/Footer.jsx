@@ -55,9 +55,15 @@ function Footer() {
             variants={textAnimation}
             className={style.links}
           >
-            <a href="" className={style.telega}></a>
-            <a href="" className={style.insta}></a>
-            <a href="" className={style.facebook}></a>
+            <a href="https://t.me/drMaxPryima" className={style.telega}></a>
+            <a
+              href="https://www.instagram.com/primadent.uzh/"
+              className={style.insta}
+            ></a>
+            <a
+              href="https://www.facebook.com/primadent.uzh"
+              className={style.facebook}
+            ></a>
           </motion.div>
           <motion.div
             custom={3}

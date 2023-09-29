@@ -225,12 +225,6 @@ function SixthBlock() {
                     Сертифікати
                   </button>
                   <button
-                    className={btnActiveS === 2 ? style.btnMinus : style.btn}
-                    onClick={() => setBtnActiveS((btnActiveS = 2))}
-                  >
-                    Галерея
-                  </button>
-                  <button
                     className={
                       btnActiveS === 0 ? style.btnCloseMinus : style.btnClose
                     }
@@ -260,12 +254,7 @@ function SixthBlock() {
                   className={
                     btnActiveS === 2 ? style.gallery : style.galleryMinus
                   }
-                >
-                  {/* <div className={style.image}></div>
-                  <div className={style.image}></div>
-                  <div className={style.image}></div>
-                  <div className={style.image}></div> */}
-                </div>
+                ></div>
               </div>
             </div>
           </div>

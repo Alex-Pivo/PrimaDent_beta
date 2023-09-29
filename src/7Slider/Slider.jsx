@@ -101,6 +101,13 @@ function Slider({ children }) {
     );
   }, []);
 
+  $(function () {
+    $("#draggable").draggable({
+      axis: "x",
+      containment: "parent",
+    });
+  });
+
   return (
     <>
       <motion.section
@@ -127,6 +134,7 @@ function Slider({ children }) {
             ></FaChevronLeft>
             <div className={style.window}>
               <div
+                id="draggable"
                 className={style.slide}
                 style={{
                   transform: `translateX(${offset}%)`,
