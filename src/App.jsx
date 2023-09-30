@@ -14,6 +14,7 @@ import style from "./body/body.module.css";
 
 function App() {
   const [modalActive, setModalActive] = useState(false);
+
   return (
     <div className={style.body}>
       <FirstBlock></FirstBlock>

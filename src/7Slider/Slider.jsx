@@ -2,6 +2,7 @@ import React, { useEffect, useState, Children, cloneElement } from "react";
 import style from "../css/slider.module.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useSwipeable } from "react-swipeable";
 
 const textAnimation = {
   hidden: {
@@ -42,6 +43,14 @@ function Slider({ children }) {
       return newOffset;
     });
   };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleRightArrowClick(),
+    onSwipedRight: () => handleLeftArrowClick(),
+    swipeDuration: 500,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
 
   const handleTwoClick = () => {
     setOffset(() => {
@@ -139,6 +148,7 @@ function Slider({ children }) {
                 style={{
                   transform: `translateX(${offset}%)`,
                 }}
+                {...handlers}
               >
                 {pages}
               </div>
