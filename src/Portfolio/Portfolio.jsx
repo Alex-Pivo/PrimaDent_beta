@@ -6,13 +6,13 @@ import { toothes } from "./tooth.data";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const textAnimation = {
+const textAnim = {
   hidden: {
-    x: -25,
+    y: -50,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { delay: custom * 0.2 },
   }),
@@ -21,34 +21,25 @@ const textAnimation = {
 function Portfolio() {
   return (
     <>
-      <motion.section
+      <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2, once: true }}
+        custom={1}
+        variants={textAnim}
+        className={style.portfolio}
+        id={"portfolio"}
       >
-        <div className={style.portfolio} id={"portfolio"}>
-          <div className={style.titleBox}>
-            <motion.h2
-              custom={1}
-              variants={textAnimation}
-              className={style.title}
-            >
-              Портфоліо
-            </motion.h2>
-            <motion.p
-              custom={2}
-              variants={textAnimation}
-              className={style.text}
-            >
-              Історії наших пацієнтів, де ви можете ознайомитися з їхнім
-              досвідом на власні очі
-            </motion.p>
-          </div>
-          {toothes.map((tooth) => (
-            <Tooth key={tooth.id} tooth={tooth}></Tooth>
-          ))}
+        <div className={style.titleBox}>
+          <h2 className={style.title}>Портфоліо</h2>
+          <p className={style.text}>
+            Історії наших пацієнтів, де ви можете ознайомитися з їхнім досвідом
+            на власні очі
+          </p>
         </div>
-      </motion.section>
+        {toothes.map((tooth) => (
+          <Tooth key={tooth.id} tooth={tooth}></Tooth>
+        ))}
+      </motion.div>
       <EighthBlock></EighthBlock>
       <Footer></Footer>
     </>

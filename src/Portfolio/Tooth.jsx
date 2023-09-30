@@ -25,7 +25,7 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.6 },
+    transition: { delay: custom * 0.4 },
   }),
 };
 
@@ -67,6 +67,9 @@ function Tooth({ tooth }) {
         custom={tooth.id}
         variants={textAnimation}
         className={style.photosBox}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.2, once: true }}
       >
         <h2 className={style.name}>{tooth.name}</h2>
 
