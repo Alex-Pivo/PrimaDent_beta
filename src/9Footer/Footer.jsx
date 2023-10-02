@@ -41,13 +41,14 @@ function Footer() {
               Мукачівська 4, що у трьох хвилинах ходьби від площі Петефі.
             </motion.p>
             <MapComponent></MapComponent>
+
             <motion.div
               custom={3}
               variants={textAnimation}
               className={style.mailTime}
             >
-              <p className={style.mail}>teste@gmail.com</p>
-              <p className={style.time}>пн-пт: 8.00 - 20.00</p>
+              <p className={style.mail}>пн-пт: 8.00 - 20.00</p>
+              <p className={style.time}>made by Y.tech</p>
             </motion.div>
           </div>
           <motion.div
@@ -70,8 +71,8 @@ function Footer() {
             variants={textAnimation}
             className={style.mailTimeInvis}
           >
-            <p className={style.mail}>teste@gmail.com</p>
-            <p className={style.time}>пн-пт: 8.00 - 20.00</p>
+            <p className={style.mail}>пн-пт: 8.00 - 20.00</p>
+            <p className={style.time}>made by Y.tech</p>
           </motion.div>
         </footer>
       </motion.section>

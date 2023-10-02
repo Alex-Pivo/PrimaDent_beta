@@ -7,6 +7,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+  position: relative;
+  z-index: 0;
   .info {
     width: 48%;
     height: 100%;
@@ -33,12 +35,13 @@
       margin-bottom: 10px;
     }
     .mailTime {
-      width: 400px;
+      width: 480px;
       height: 30px;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       font-family: Montserrat;
       font-size: 20px;
@@ -46,6 +49,13 @@
       line-height: 30px;
       color: #f9f9f9;
     }
+    // .mail {
+    //   font-family: Montserrat;
+    //   font-size: 20px;
+    //   font-weight: 400;
+    //   line-height: 30px;
+    //   color: #f9f9f9;
+    // }
   }
   .links {
     width: 48%;
@@ -54,6 +64,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-end;
+
     a {
       width: 122px;
       height: 122px;
@@ -76,18 +87,18 @@
       background-size: cover;
     }
   }
-
-  .mailTimeInvis {
-    display: none;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #f9f9f9;
-  }
 }
 
-@media (max-width: 1024px) {
+.mailTimeInvis {
+  display: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #f9f9f9;
+}
+
+@media (max-width: 1025px) {
   .footer {
     height: 380px;
     padding: 30px;
@@ -136,6 +147,7 @@
 @media (max-width: 769px) {
   .footer {
     height: 558px;
+    width: 100%;
     padding: 0px;
     padding-top: 40px;
     flex-direction: column;
@@ -164,10 +176,10 @@
       }
     }
     .links {
-      width: 100%;
+      width: 91.4%;
       height: 79.08px;
-      justify-content: flex-start;
       margin-top: 20px;
+      justify-content: flex-start;
       a {
         width: 79.08px;
         height: 79.08px;
@@ -188,24 +200,25 @@
         // background-size: contain;
       }
     }
+  }
 
-    .mailTimeInvis {
-      display: none;
-      margin-top: 10px;
-      width: 200px;
-      height: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      .mail {
-        font-size: 20px;
-        font-weight: 400;
-      }
-      .time {
-        font-size: 20px;
-        font-weight: 400;
-      }
+  .mailTimeInvis {
+    display: none;
+    margin-top: 10px;
+    margin-left: 4%;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    .mail {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .time {
+      font-size: 20px;
+      font-weight: 400;
     }
   }
 }
@@ -273,7 +286,7 @@
       height: 30px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       .mail {
         font-size: 20px;
@@ -318,11 +331,12 @@
     .mailTimeInvis {
       display: none;
       margin-top: 10px;
+      margin-left: 4%;
       width: 200px;
       height: 30px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
       .mail {
         font-size: 20px;

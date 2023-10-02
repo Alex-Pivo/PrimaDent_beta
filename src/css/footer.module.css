@@ -7,6 +7,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+  position: relative;
+  z-index: 0;
 }
 .footer .info {
   width: 48%;
@@ -35,12 +37,13 @@
   margin-bottom: 10px;
 }
 .footer .info .mailTime {
-  width: 400px;
+  width: 480px;
   height: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
@@ -76,7 +79,8 @@
   background-position: center;
   background-size: cover;
 }
-.footer .mailTimeInvis {
+
+.mailTimeInvis {
   display: none;
   font-family: Montserrat;
   font-size: 20px;
@@ -85,7 +89,7 @@
   color: #f9f9f9;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .footer {
     height: 380px;
     padding: 30px;
@@ -121,6 +125,7 @@
 @media (max-width: 769px) {
   .footer {
     height: 558px;
+    width: 100%;
     padding: 0px;
     padding-top: 40px;
     flex-direction: column;
@@ -150,10 +155,10 @@
     line-height: 30px;
   }
   .footer .links {
-    width: 100%;
+    width: 91.4%;
     height: 79.08px;
-    justify-content: flex-start;
     margin-top: 20px;
+    justify-content: flex-start;
   }
   .footer .links a {
     width: 79.08px;
@@ -162,21 +167,22 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .footer .mailTimeInvis {
+  .mailTimeInvis {
     display: none;
     margin-top: 10px;
+    margin-left: 4%;
     width: 200px;
-    height: 30px;
+    height: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
   }
-  .footer .mailTimeInvis .mail {
+  .mailTimeInvis .mail {
     font-size: 20px;
     font-weight: 400;
   }
-  .footer .mailTimeInvis .time {
+  .mailTimeInvis .time {
     font-size: 20px;
     font-weight: 400;
   }
@@ -232,7 +238,7 @@
     height: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
   .footer .mailTimeInvis .mail {
@@ -261,11 +267,12 @@
   .footer .mailTimeInvis {
     display: none;
     margin-top: 10px;
+    margin-left: 4%;
     width: 200px;
     height: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
   .footer .mailTimeInvis .mail {
