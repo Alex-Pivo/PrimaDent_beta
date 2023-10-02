@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 
 function Header({ active, setModal }) {
   const [burgerActive, setBurgerActive] = useState(true);
+  let [price, setPriceActive] = useState(true);
+  let [port, setPortActive] = useState(true);
   const location = useLocation();
   useEffect(() => {}, []);
 
@@ -22,6 +24,13 @@ function Header({ active, setModal }) {
   const aboutPersonal = (partList) => {
     if (location.pathname !== "/") {
       nav("/");
+
+      setPriceActive((price = false));
+      linkPrcies(price);
+
+      setPortActive((port = false));
+      linkPort(port);
+
       setTimeout(() => {
         scrollToSection(partList);
       }, 100);
@@ -30,9 +39,52 @@ function Header({ active, setModal }) {
     }
   };
 
+  const linkPrcies = (price) => {
+    if (price === true) {
+      $(function () {
+        $("#linkPrice").css({
+          color: "#305381",
+          textDecoration: "underline",
+        });
+      });
+    } else {
+      $(function () {
+        $("#linkPrice").css({
+          color: "#282828",
+          textDecoration: "none",
+        });
+      });
+    }
+  };
+
+  const linkPort = (port) => {
+    if (port === true) {
+      $(function () {
+        $("#linkPort").css({
+          textDecoration: "underline",
+          color: "#305381",
+        });
+      });
+    } else {
+      $(function () {
+        $("#linkPort").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+    }
+  };
+
   const movePrices = (partList) => {
     if (location.pathname !== "prices") {
       nav("/prices");
+
+      setPriceActive((price = true));
+      linkPrcies(price);
+
+      setPortActive((port = false));
+      linkPort(port);
+
       setTimeout(() => {
         scrollToSection(partList);
       }, 100);
@@ -42,6 +94,13 @@ function Header({ active, setModal }) {
   const movePortfolio = (partList) => {
     if (location.pathname !== "portfolio") {
       nav("/portfolio");
+
+      setPortActive((port = true));
+      linkPort(port);
+
+      setPriceActive((price = false));
+      linkPrcies(price);
+
       setTimeout(() => {
         scrollToSection(partList);
       }, 100);
@@ -78,6 +137,7 @@ function Header({ active, setModal }) {
                 className={style.navLink}
                 style={{ backgroundColor: "#f9f9f9" }}
                 onClick={() => movePrices("prices")}
+                id="linkPrice"
               >
                 Ціни
               </button>
@@ -92,6 +152,7 @@ function Header({ active, setModal }) {
                 className={style.navLink}
                 style={{ backgroundColor: "#f9f9f9" }}
                 onClick={() => movePortfolio("portfolio")}
+                id="linkPort"
               >
                 Портфоліо
               </button>

@@ -1,6 +1,7 @@
 import Card from "./cards/Card.jsx";
 import style from "../css/secondBlock.module.css";
 import { motion } from "framer-motion";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const textAnimation = {
   hidden: {
@@ -15,6 +16,27 @@ const textAnimation = {
 };
 
 function SecondBlock() {
+  const location = useLocation();
+  const nav = useNavigate();
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const aboutPersonal = (partList) => {
+    if (location.pathname !== "/") {
+      nav("/");
+      setTimeout(() => {
+        scrollToSection(partList);
+      }, 100);
+    } else {
+      scrollToSection(partList);
+    }
+  };
+
   return (
     <>
       <motion.section
@@ -36,6 +58,7 @@ function SecondBlock() {
               custom={7}
               variants={textAnimation}
               className={style.container__btn}
+              onClick={() => aboutPersonal("aboutTeam")}
             >
               Дізнатися більше
             </motion.button>

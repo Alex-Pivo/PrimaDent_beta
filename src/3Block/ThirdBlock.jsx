@@ -69,14 +69,17 @@ function ThirdBlock() {
                   протягом 4-7 днів.
                 </motion.p>
               </div>
-              <motion.img
-                src={pathPhoto}
-                alt=""
-                custom={3}
-                variants={textAnimation}
-                className={style.main__photo}
-              />
+              <div className={style.photoContainer}>
+                <motion.img
+                  src={pathPhoto}
+                  alt=""
+                  custom={3}
+                  variants={textAnimation}
+                  className={style.main__photo}
+                />
+              </div>
             </div>
+
             <motion.p
               custom={4}
               variants={textAnimation}

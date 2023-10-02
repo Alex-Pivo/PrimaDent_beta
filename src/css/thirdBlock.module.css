@@ -35,12 +35,20 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.thirdBlock .thirdBlock__container .info__container .main__photo {
+.thirdBlock .thirdBlock__container .info__container .photoContainer {
   width: 50%;
-  max-height: 600px;
+  height: 600px;
+}
+.thirdBlock .thirdBlock__container .info__container .photoContainer .main__photo {
+  width: 100%;
+  height: 100%;
+  position: static;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  float: left;
 }
 
 .text__bottom {
@@ -72,6 +80,23 @@
   color: #282828;
 }
 
+@media (max-width: 1530px) {
+  .thirdBlock .thirdBlock__container .info__container .photoContainer {
+    width: 50%;
+    height: 660px;
+  }
+  .thirdBlock .thirdBlock__container .info__container .photoContainer .main__photo {
+    width: 100%;
+    height: 100%;
+    position: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    float: left;
+  }
+}
 @media (max-width: 1440px) {
   .thirdBlock {
     width: 100%;
@@ -101,9 +126,12 @@
     width: 49%;
     height: 94%;
   }
-  .thirdBlock .thirdBlock__container .info__container .main__photo {
-    width: 50%;
-    max-height: 467px;
+  .thirdBlock .thirdBlock__container .info__container .photoContainer {
+    height: 400px;
+  }
+  .thirdBlock .thirdBlock__container .info__container .photoContainer .main__photo {
+    width: 100%;
+    max-height: 100%;
   }
   .text__bottom {
     margin-bottom: 20px;
@@ -120,6 +148,16 @@
   .unvisible__text span {
     font-weight: 700;
     color: #305381;
+  }
+}
+@media (max-width: 1201px) {
+  .thirdBlock .thirdBlock__container .info__container .photoContainer {
+    width: 50%;
+    height: 480px;
+  }
+  .thirdBlock .thirdBlock__container .info__container .photoContainer .main__photo {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 1024px) {
@@ -170,6 +208,16 @@
     color: #305381;
   }
 }
+@media (max-width: 901px) {
+  .thirdBlock .thirdBlock__container .info__container .photoContainer {
+    width: 50%;
+    height: 600px;
+  }
+  .thirdBlock .thirdBlock__container .info__container .photoContainer .main__photo {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media (max-width: 769px) {
   .thirdBlock {
     width: 100%;
@@ -195,7 +243,12 @@
   .thirdBlock .thirdBlock__container .info__container .main__info {
     width: 100%;
   }
-  .thirdBlock .thirdBlock__container .info__container .main__photo {
+  .thirdBlock .thirdBlock__container .info__container .photoContainer {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .thirdBlock .thirdBlock__container .info__container .photoContainer .main__photo {
     width: 100%;
     max-height: 350px;
     background-size: cover;
