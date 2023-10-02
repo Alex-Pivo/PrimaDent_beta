@@ -31,7 +31,7 @@
 }
 .sixthBlock .container .team .maks {
   width: 40%;
-  height: auto;
+  max-height: auto;
 }
 .sixthBlock .container .team .maks .img {
   width: 100%;
@@ -110,7 +110,7 @@
 }
 .sixthBlock .container .team .maks .sertificates {
   width: 100%;
-  height: auto;
+  max-height: auto;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
@@ -287,6 +287,7 @@
 }
 
 .info {
+  min-height: 400px;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
@@ -294,6 +295,19 @@
   margin-bottom: 35px;
 }
 
+@media (max-width: 1600px) {
+  .info {
+    min-height: 500px;
+  }
+}
+@media (max-width: 1489px) {
+  .sixthBlock .container .team .valera .name {
+    margin-bottom: 76px;
+  }
+  .info {
+    min-height: 550px;
+  }
+}
 @media (max-width: 1440px) {
   .sixthBlock {
     width: 100%;
@@ -325,6 +339,22 @@
   .sixthBlock .container .team .valera .img {
     width: 100%;
     height: 535px;
+  }
+  .sixthBlock .container .team .valera .name {
+    margin-bottom: 40px;
+  }
+  .info {
+    min-height: 440px;
+  }
+}
+@media (max-width: 1291px) {
+  .info {
+    min-height: 500px;
+  }
+}
+@media (max-width: 1267px) {
+  .sixthBlock .container .team .valera .name {
+    margin-bottom: 76px;
   }
 }
 @media (max-width: 1024px) {
@@ -369,6 +399,9 @@
   .sixthBlock .container .team .valera .buttons .btn {
     font-size: 18px;
   }
+  .sixthBlock .container .team .valera .name {
+    margin-bottom: 40px;
+  }
   .sixthBlock .name {
     font-size: 20px;
   }
@@ -377,6 +410,22 @@
   }
   .sixthBlock .info {
     font-size: 20px;
+    min-height: 460px;
+  }
+}
+@media (max-width: 1014px) {
+  .sixthBlock .container .team .valera .name {
+    margin-bottom: 76px;
+  }
+}
+@media (max-width: 930px) {
+  .sixthBlock .info {
+    min-height: 420px;
+  }
+}
+@media (max-width: 893px) {
+  .sixthBlock .info {
+    min-height: 500px;
   }
 }
 @media (max-width: 769px) {
@@ -418,6 +467,9 @@
     height: 349px;
     margin-bottom: 20px;
   }
+  .sixthBlock .container .team .valera .name {
+    margin-bottom: 20px;
+  }
   .sixthBlock .name {
     font-size: 22px;
     line-height: 29px;
@@ -431,6 +483,7 @@
   .sixthBlock .info {
     font-size: 18px;
     line-height: 26px;
+    min-height: 0px;
   }
 }
 @media (max-width: 426px) {
