@@ -21,10 +21,6 @@
     .photos {
       width: 81.25%;
       height: 600px;
-      // display: flex;
-      // flex-direction: row;
-      // align-items: center;
-      // justify-content: space-between;
       margin-bottom: 70px;
       .photoLeft {
         width: 100%;
@@ -36,7 +32,6 @@
         position: relative;
         z-index: 1;
         .photoRight {
-          // width: 50%;
           height: 100%;
           border-radius: 10px;
           position: relative;
@@ -524,8 +519,8 @@
           .photoRight {
             .photoTooth {
               width: 420px;
-              height: 150%;
-              background-position: center -50px;
+              height: 180%;
+              background-position: center -70px;
             }
           }
           .circle {
@@ -561,8 +556,8 @@
           .photoRight {
             .photoTooth {
               width: 365px;
-              height: 150%;
-              background-position: center -46px;
+              height: 180%;
+              background-position: center -66px;
             }
           }
           .circle {
@@ -584,8 +579,8 @@
         .photoLeft {
           .photoRight {
             .photoTooth {
-              width: 336px;
-              height: 150%;
+              width: 306px;
+              height: 160%;
               background-position: center -46px;
             }
           }

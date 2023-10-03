@@ -376,8 +376,8 @@
   }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 420px;
-    height: 150%;
-    background-position: center -50px;
+    height: 180%;
+    background-position: center -70px;
   }
   .fourthBlock .container .photos .photoLeft .circle {
     width: 61px;
@@ -400,8 +400,8 @@
 @media (max-width: 376px) {
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 365px;
-    height: 150%;
-    background-position: center -46px;
+    height: 180%;
+    background-position: center -66px;
   }
   .fourthBlock .container .photos .photoLeft .circle {
     width: 61px;
@@ -412,8 +412,8 @@
 }
 @media (max-width: 341px) {
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
-    width: 336px;
-    height: 150%;
+    width: 306px;
+    height: 160%;
     background-position: center -46px;
   }
   .fourthBlock .container .photos .photoLeft .circle {

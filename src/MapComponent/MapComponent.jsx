@@ -1,6 +1,7 @@
 import React from "react";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import "./Map.css";
+import urlPic from "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
 class MapComponent extends React.Component {
   state = {
@@ -15,7 +16,7 @@ class MapComponent extends React.Component {
       <MapContainer center={center} zoom={17} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          url={urlPic}
         />
         <Marker position={center}>
           <Popup>PrimaDent</Popup>
