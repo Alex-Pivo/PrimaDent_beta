@@ -36,7 +36,7 @@ export const photos = [
     path: "/src/6Block/Gallery/9.JPG",
   },
   {
-    id: 9,
+    id: 10,
     path: "/src/6Block/Gallery/10.JPG",
   },
 ];

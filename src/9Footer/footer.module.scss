@@ -1,16 +1,17 @@
 .footer {
   width: 100%;
-  height: 380px;
+  height: 420px;
   background-color: #282828;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 30px;
   position: relative;
   z-index: 0;
   .info {
-    width: 48%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@
     // }
   }
   .links {
-    width: 48%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -83,6 +84,30 @@
     }
     .facebook {
       background: url("../assets/img/facebook.svg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .techCont {
+    width: 184px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    .comp {
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #6d6d6d;
+      text-align: center;
+    }
+    .instaComp {
+      width: 26px;
+      height: 26px;
+      background: url("../assets/img/instaLogo.svg");
       background-position: center;
       background-size: cover;
     }
@@ -150,9 +175,9 @@
     width: 100%;
     padding: 0px;
     padding-top: 40px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     .info {
       width: 91.4%;
       height: 343px;
@@ -176,8 +201,9 @@
       }
     }
     .links {
-      width: 91.4%;
+      width: 95.4%;
       height: 79.08px;
+      margin: 0 auto;
       margin-top: 20px;
       justify-content: flex-start;
       a {
@@ -198,6 +224,33 @@
       .facebook {
         // background-position: center;
         // background-size: contain;
+      }
+    }
+
+    .techCont {
+      margin-right: 4%;
+      display: flex;
+      margin-top: 10px;
+      width: 184px;
+      height: 60px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+      .comp {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #6d6d6d;
+        text-align: center;
+      }
+      .instaComp {
+        width: 26px;
+        height: 26px;
+        background: url("../assets/img/instaLogo.svg");
+        background-position: center;
+        background-size: cover;
       }
     }
   }
@@ -225,10 +278,10 @@
 
 @media (max-width: 426px) {
   .footer {
-    height: 558px;
+    height: 598px;
     padding: 0px;
     padding-top: 40px;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     .info {
@@ -254,10 +307,11 @@
       }
     }
     .links {
-      width: 100%;
+      width: 270px;
       height: 79.08px;
+      margin: 0 auto;
       justify-content: flex-start;
-      margin-top: 20px;
+      // margin-top: 20px;
       a {
         width: 79.08px;
         height: 79.08px;
@@ -279,14 +333,42 @@
       }
     }
 
+    .techCont {
+      display: flex;
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 300px;
+      height: 30px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      .comp {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #6d6d6d;
+        text-align: center;
+      }
+      .instaComp {
+        width: 26px;
+        height: 26px;
+        background: url("../assets/img/instaLogo.svg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
     .mailTimeInvis {
       display: none;
-      margin-top: 10px;
+      margin: 0 auto;
+      // margin-top: 10px;
       width: 200px;
       height: 30px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
       .mail {
         font-size: 20px;

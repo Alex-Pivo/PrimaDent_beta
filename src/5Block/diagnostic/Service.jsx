@@ -37,7 +37,7 @@ function Service({ service }) {
           <button className={style.btn} onClick={handleActive}>
             Записатись
           </button>
-          <p className={style.price}>{service.price}</p>
+          {/* <p className={style.price}>{service.price}</p> */}
         </div>
       </motion.div>
     </>

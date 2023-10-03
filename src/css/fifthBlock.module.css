@@ -21,7 +21,7 @@
 }
 .fifthBlock .container .services {
   max-width: 94%;
-  min-height: 280px;
+  height: 320px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,12 +31,12 @@
   scroll-behavior: smooth;
 }
 .fifthBlock .container .services .service {
-  min-width: 380px;
-  min-height: 100%;
+  min-width: 480px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -46,7 +46,6 @@
   font-weight: 700;
   line-height: 37px;
   color: #282828;
-  margin-bottom: 20px;
 }
 .fifthBlock .container .services .service .serviceText {
   font-family: Montserrat;
@@ -54,18 +53,17 @@
   font-weight: 500;
   line-height: 20px;
   color: #737583;
-  margin-bottom: 20px;
 }
 .fifthBlock .container .services .service .boxes {
   width: 100%;
-  height: 100px;
+  height: 65px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .fifthBlock .container .services .service .boxes .btn {
-  width: 190px;
+  width: 100%;
   height: 65px;
   border-radius: 5px;
   background-color: #305381;
@@ -102,11 +100,11 @@
   }
   .fifthBlock .container .services {
     max-width: 100%;
-    min-height: 208px;
+    height: 300px;
   }
   .fifthBlock .container .services .service {
-    min-width: 390px;
-    min-height: 100%;
+    min-width: 490px;
+    height: 230px;
   }
   .fifthBlock .container .services .service .serviceTitle {
     margin-bottom: 20px;
@@ -171,9 +169,9 @@
     scroll-behavior: smooth;
   }
   .fifthBlock .container .services .service {
-    min-width: 100%;
-    min-height: 195px;
-    margin-bottom: 40px;
+    min-width: 96%;
+    min-height: 185px;
+    margin-bottom: 60px;
   }
   .fifthBlock .container .services .service .serviceTitle {
     font-size: 24px;
@@ -215,16 +213,16 @@
     align-items: center;
     justify-content: space-between;
     min-width: 100%;
-    min-height: 673px;
+    height: 673px;
     flex-shrink: inherit;
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
   .fifthBlock .container .services .service {
-    min-width: 100%;
-    min-height: 195px;
-    margin-bottom: 40px;
+    min-width: 96%;
+    min-height: 265px;
+    margin-bottom: 60px;
   }
   .fifthBlock .container .services .service .serviceTitle {
     font-size: 24px;

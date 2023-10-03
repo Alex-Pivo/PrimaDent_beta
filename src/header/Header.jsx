@@ -7,6 +7,7 @@ function Header({ active, setModal }) {
   const [burgerActive, setBurgerActive] = useState(true);
   let [price, setPriceActive] = useState(true);
   let [port, setPortActive] = useState(true);
+  let [serv, setServActive] = useState(true);
   const location = useLocation();
   useEffect(() => {}, []);
 
@@ -24,6 +25,11 @@ function Header({ active, setModal }) {
   const aboutPersonal = (partList) => {
     if (location.pathname !== "/") {
       nav("/");
+
+      if (partList === "services") {
+        setServActive(serv === true);
+        linkServ(serv);
+      }
 
       setPriceActive((price = false));
       linkPrcies(price);
@@ -75,6 +81,24 @@ function Header({ active, setModal }) {
     }
   };
 
+  const linkServ = (serv) => {
+    if (serv === true) {
+      $(function () {
+        $("#serv").css({
+          textDecoration: "underline",
+          color: "#305381",
+        });
+      });
+    } else {
+      $(function () {
+        $("#serv").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+    }
+  };
+
   const movePrices = (partList) => {
     if (location.pathname !== "prices") {
       nav("/prices");
@@ -114,6 +138,7 @@ function Header({ active, setModal }) {
           <button
             style={{ backgroundColor: "transparent" }}
             onClick={() => aboutPersonal("mainScreen")}
+            id="mainS"
           >
             <div className={style.logo}></div>
           </button>
@@ -123,6 +148,7 @@ function Header({ active, setModal }) {
                 className={style.navLink}
                 style={{ backgroundColor: "#f9f9f9" }}
                 onClick={() => aboutPersonal("services")}
+                id="serv"
               >
                 Послуги
               </button>

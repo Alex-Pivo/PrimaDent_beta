@@ -1,17 +1,18 @@
 .footer {
   width: 100%;
-  height: 380px;
+  height: 420px;
   background-color: #282828;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 30px;
   position: relative;
   z-index: 0;
 }
 .footer .info {
-  width: 48%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -51,7 +52,7 @@
   color: #f9f9f9;
 }
 .footer .links {
-  width: 48%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -76,6 +77,29 @@
 }
 .footer .links .facebook {
   background: url("../assets/img/facebook.svg");
+  background-position: center;
+  background-size: cover;
+}
+.footer .techCont {
+  width: 184px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.footer .techCont .comp {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6d6d6d;
+  text-align: center;
+}
+.footer .techCont .instaComp {
+  width: 26px;
+  height: 26px;
+  background: url("../assets/img/instaLogo.svg");
   background-position: center;
   background-size: cover;
 }
@@ -128,9 +152,9 @@
     width: 100%;
     padding: 0px;
     padding-top: 40px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .footer .info {
     width: 91.4%;
@@ -155,8 +179,9 @@
     line-height: 30px;
   }
   .footer .links {
-    width: 91.4%;
+    width: 95.4%;
     height: 79.08px;
+    margin: 0 auto;
     margin-top: 20px;
     justify-content: flex-start;
   }
@@ -166,6 +191,32 @@
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .footer .techCont {
+    margin-right: 4%;
+    display: flex;
+    margin-top: 10px;
+    width: 184px;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+  }
+  .footer .techCont .comp {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6d6d6d;
+    text-align: center;
+  }
+  .footer .techCont .instaComp {
+    width: 26px;
+    height: 26px;
+    background: url("../assets/img/instaLogo.svg");
+    background-position: center;
+    background-size: cover;
   }
   .mailTimeInvis {
     display: none;
@@ -189,10 +240,9 @@
 }
 @media (max-width: 426px) {
   .footer {
-    height: 558px;
+    height: 598px;
     padding: 0px;
     padding-top: 40px;
-    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
@@ -219,10 +269,10 @@
     line-height: 30px;
   }
   .footer .links {
-    width: 100%;
+    width: 270px;
     height: 79.08px;
+    margin: 0 auto;
     justify-content: flex-start;
-    margin-top: 20px;
   }
   .footer .links a {
     width: 79.08px;
@@ -231,14 +281,40 @@
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .footer .techCont {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .footer .techCont .comp {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6d6d6d;
+    text-align: center;
+  }
+  .footer .techCont .instaComp {
+    width: 26px;
+    height: 26px;
+    background: url("../assets/img/instaLogo.svg");
+    background-position: center;
+    background-size: cover;
+  }
   .footer .mailTimeInvis {
     display: none;
-    margin-top: 10px;
+    margin: 0 auto;
     width: 200px;
     height: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
   .footer .mailTimeInvis .mail {

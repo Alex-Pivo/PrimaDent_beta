@@ -48,7 +48,6 @@ function Footer() {
               className={style.mailTime}
             >
               <p className={style.mail}>пн-пт: 8.00 - 20.00</p>
-              <p className={style.time}>made by Y.tech</p>
             </motion.div>
           </div>
           <motion.div
@@ -72,8 +71,17 @@ function Footer() {
             className={style.mailTimeInvis}
           >
             <p className={style.mail}>пн-пт: 8.00 - 20.00</p>
-            <p className={style.time}>made by Y.tech</p>
           </motion.div>
+          <a
+            href="https://instagram.com/y.tech_ua?igshid=MzRlODBiNWFlZA=="
+            className={style.techCont}
+          >
+            <p className={style.comp}>made by Y.tech</p>
+            <a
+              href="https://instagram.com/y.tech_ua?igshid=MzRlODBiNWFlZA=="
+              className={style.instaComp}
+            ></a>
+          </a>
         </footer>
       </motion.section>
     </>

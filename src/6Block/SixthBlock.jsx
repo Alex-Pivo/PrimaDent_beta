@@ -129,8 +129,6 @@ function SixthBlock() {
                 <motion.div
                   custom={5}
                   variants={textAnimation}
-                  // initial="hidden"
-                  // whileInView="visible"
                   viewport={{ amount: 0.2, once: true }}
                   className={style.buttons}
                 >
@@ -152,8 +150,7 @@ function SixthBlock() {
                     }
                     onClick={() => setBtnActive((btnActive = 0))}
                   >
-                    {" "}
-                    <img src={btnActive === 0 ? arrow1 : arrow2} alt="" />{" "}
+                    <img src={btnActive === 0 ? arrow1 : arrow2} alt="" />
                   </motion.button>
                 </motion.div>
                 <div
