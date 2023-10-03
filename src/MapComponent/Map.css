@@ -5,6 +5,10 @@
   width: 70%;
 }
 
+.leaflet-marker-pane img {
+  src: url("marker-icon-2x.png");
+}
+
 @media (max-width: 1024px) {
   .leaflet-container {
     height: 200px;
