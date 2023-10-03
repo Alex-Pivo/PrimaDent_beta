@@ -5,10 +5,6 @@
   width: 70%;
 }
 
-.leaflet-marker-icon {
-  src: url("../../node_modules/leaflet/dist/images/marker-icon-2x.png");
-}
-
 @media (max-width: 1024px) {
   .leaflet-container {
     height: 200px;
