@@ -1,7 +1,6 @@
 import React from "react";
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
 import "./Map.css";
-import picMark from "../../node_modules/leaflet/dist/images/marker-icon-2x.png";
 
 class MapComponent extends React.Component {
   state = {
@@ -18,7 +17,7 @@ class MapComponent extends React.Component {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker src={picMark} position={center}>
+        <Marker position={center}>
           <Popup>PrimaDent</Popup>
         </Marker>
       </MapContainer>
