@@ -17,8 +17,6 @@ const textAnimation = {
 
 function ItemPrice({ priceItem, gKey }) {
   const [btnActive, setBtnActive] = useState(false);
-
-  console.log(gKey);
   return (
     <>
       <motion.div

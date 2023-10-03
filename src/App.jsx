@@ -18,11 +18,14 @@ function App() {
   const [modalActive, setModalActive] = useState(false);
 
   function onChange(isVisible) {
-    console.log("Element is now %s", isVisible ? "visible" : "hidden");
-
     if (isVisible === true) {
       $(function () {
         $("#serv").css({
+          textDecoration: "underline",
+          color: "#305381",
+        });
+
+        $("#serv1").css({
           textDecoration: "underline",
           color: "#305381",
         });
@@ -33,15 +36,24 @@ function App() {
           textDecoration: "none",
           color: "#282828",
         });
+
+        $("#serv1").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
       });
     }
   }
 
   function onChangeAbout(isVisibleAbout) {
-    console.log("Element is now %s", isVisibleAbout ? "visible" : "hidden");
     if (isVisibleAbout === true) {
       $(function () {
         $("#about").css({
+          textDecoration: "underline",
+          color: "#305381",
+        });
+
+        $("#about1").css({
           textDecoration: "underline",
           color: "#305381",
         });
@@ -52,16 +64,24 @@ function App() {
           textDecoration: "none",
           color: "#282828",
         });
+
+        $("#about1").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
       });
     }
   }
 
   function onChangeSlider(isVisibleSlider) {
-    console.log("Element is now %s", isVisibleSlider ? "visible" : "hidden");
-
     if (isVisibleSlider === true) {
       $(function () {
         $("#slider").css({
+          textDecoration: "underline",
+          color: "#305381",
+        });
+
+        $("#slider1").css({
           textDecoration: "underline",
           color: "#305381",
         });
@@ -69,6 +89,11 @@ function App() {
     } else if (isVisibleSlider === false) {
       $(function () {
         $("#slider").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+
+        $("#slider1").css({
           textDecoration: "none",
           color: "#282828",
         });
@@ -107,7 +132,7 @@ function App() {
       <VisibilitySensor
         onChange={onChangeSlider}
         partialVisibility={top}
-        minTopValue="420"
+        minTopValue="360"
       >
         <Slider>
           <div className={style.itemOne}>

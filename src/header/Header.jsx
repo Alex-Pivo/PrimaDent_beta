@@ -47,9 +47,23 @@ function Header({ active, setModal }) {
           textDecoration: "underline",
         });
       });
+
+      $(function () {
+        $("#linkPrice1").css({
+          color: "#305381",
+          textDecoration: "underline",
+        });
+      });
     } else {
       $(function () {
         $("#linkPrice").css({
+          color: "#282828",
+          textDecoration: "none",
+        });
+      });
+
+      $(function () {
+        $("#linkPrice1").css({
           color: "#282828",
           textDecoration: "none",
         });
@@ -65,9 +79,21 @@ function Header({ active, setModal }) {
           color: "#305381",
         });
       });
+
+      $(function () {
+        $("#linkPort1").css({
+          textDecoration: "underline",
+          color: "#305381",
+        });
+      });
     } else {
       $(function () {
         $("#linkPort").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+
+        $("#linkPort1").css({
           textDecoration: "none",
           color: "#282828",
         });
@@ -93,6 +119,13 @@ function Header({ active, setModal }) {
       });
 
       $(function () {
+        $("#serv1").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
         $("#about").css({
           textDecoration: "none",
           color: "#282828",
@@ -100,7 +133,21 @@ function Header({ active, setModal }) {
       });
 
       $(function () {
+        $("#about1").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
         $("#slider").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
+        $("#slider1").css({
           textDecoration: "none",
           color: "#282828",
         });
@@ -130,6 +177,13 @@ function Header({ active, setModal }) {
       });
 
       $(function () {
+        $("#serv1").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
         $("#about").css({
           textDecoration: "none",
           color: "#282828",
@@ -137,7 +191,21 @@ function Header({ active, setModal }) {
       });
 
       $(function () {
+        $("#about1").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
         $("#slider").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
+        $("#slider1").css({
           textDecoration: "none",
           color: "#282828",
         });
@@ -222,6 +290,7 @@ function Header({ active, setModal }) {
                     aboutPersonal("services");
                   }}
                   className={style.navLink}
+                  id="serv1"
                 >
                   Послуги
                 </button>
@@ -232,6 +301,7 @@ function Header({ active, setModal }) {
                     aboutPersonal("aboutTeam");
                   }}
                   className={style.navLink}
+                  id="about1"
                 >
                   Про нас
                 </button>
@@ -242,7 +312,7 @@ function Header({ active, setModal }) {
                     setBurgerActive(burgerActive ? false : true);
                     movePrices("prices");
                   }}
-                  id="linkPrice"
+                  id="linkPrice1"
                 >
                   Ціни
                 </button>
@@ -253,6 +323,7 @@ function Header({ active, setModal }) {
                     aboutPersonal("feedback");
                     setBurgerActive(burgerActive ? false : true);
                   }}
+                  id="slider1"
                 >
                   Відгуки
                 </button>
@@ -263,6 +334,7 @@ function Header({ active, setModal }) {
                     movePortfolio("portfolio");
                     setBurgerActive(burgerActive ? false : true);
                   }}
+                  id="linkPort1"
                 >
                   Портфоліо
                 </button>

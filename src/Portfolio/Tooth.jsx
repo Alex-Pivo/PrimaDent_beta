@@ -50,7 +50,6 @@ function Tooth({ tooth }) {
   });
   var poss = $("#draggable1").position();
   let initialState = [0, 0, 0, 0];
-  console.log(poss);
   let [active, setActive] = useState(initialState);
 
   let line = $(`#line`).width();
