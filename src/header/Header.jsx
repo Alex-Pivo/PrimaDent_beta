@@ -1,13 +1,12 @@
 import style from "../css/header.module.css";
 import "../css/header.css";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Header({ active, setModal }) {
   const [burgerActive, setBurgerActive] = useState(true);
   let [price, setPriceActive] = useState(true);
   let [port, setPortActive] = useState(true);
-  let [serv, setServActive] = useState(true);
   const location = useLocation();
   useEffect(() => {}, []);
 
@@ -25,11 +24,6 @@ function Header({ active, setModal }) {
   const aboutPersonal = (partList) => {
     if (location.pathname !== "/") {
       nav("/");
-
-      if (partList === "services") {
-        setServActive(serv === true);
-        linkServ(serv);
-      }
 
       setPriceActive((price = false));
       linkPrcies(price);
@@ -81,24 +75,6 @@ function Header({ active, setModal }) {
     }
   };
 
-  const linkServ = (serv) => {
-    if (serv === true) {
-      $(function () {
-        $("#serv").css({
-          textDecoration: "underline",
-          color: "#305381",
-        });
-      });
-    } else {
-      $(function () {
-        $("#serv").css({
-          textDecoration: "none",
-          color: "#282828",
-        });
-      });
-    }
-  };
-
   const movePrices = (partList) => {
     if (location.pathname !== "prices") {
       nav("/prices");
@@ -108,6 +84,27 @@ function Header({ active, setModal }) {
 
       setPortActive((port = false));
       linkPort(port);
+
+      $(function () {
+        $("#serv").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
+        $("#about").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
+        $("#slider").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
 
       setTimeout(() => {
         scrollToSection(partList);
@@ -124,6 +121,27 @@ function Header({ active, setModal }) {
 
       setPriceActive((price = false));
       linkPrcies(price);
+
+      $(function () {
+        $("#serv").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
+        $("#about").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
+
+      $(function () {
+        $("#slider").css({
+          textDecoration: "none",
+          color: "#282828",
+        });
+      });
 
       setTimeout(() => {
         scrollToSection(partList);
@@ -156,6 +174,7 @@ function Header({ active, setModal }) {
                 className={style.navLink}
                 style={{ backgroundColor: "#f9f9f9" }}
                 onClick={() => aboutPersonal("aboutTeam")}
+                id="about"
               >
                 Про нас
               </button>
@@ -171,6 +190,7 @@ function Header({ active, setModal }) {
                 className={style.navLink}
                 style={{ backgroundColor: "#f9f9f9" }}
                 onClick={() => aboutPersonal("feedback")}
+                id="slider"
               >
                 Відгуки
               </button>
@@ -219,9 +239,10 @@ function Header({ active, setModal }) {
                   className={style.navLink}
                   style={{ backgroundColor: "#f9f9f9" }}
                   onClick={() => {
-                    movePrices("prices");
                     setBurgerActive(burgerActive ? false : true);
+                    movePrices("prices");
                   }}
+                  id="linkPrice"
                 >
                   Ціни
                 </button>

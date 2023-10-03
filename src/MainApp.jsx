@@ -9,6 +9,7 @@ import { useState } from "react";
 
 function MainApp() {
   const [active, setActive] = useState(false);
+
   return (
     <>
       <BrowserRouter>
@@ -17,7 +18,7 @@ function MainApp() {
             <Notes></Notes>
           </Modal>
         )}
-        <Header active={active} setModal={() => setActive(true)}></Header>
+        <Header setModal={() => setActive(true)}></Header>
         <Routes>
           <Route path="/" element={<App></App>}></Route>
           <Route path="prices" element={<Prices></Prices>}></Route>

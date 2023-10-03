@@ -1849,7 +1849,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.8, prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1939,6 +1939,13 @@ react-swipeable@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-7.0.1.tgz#cd299f5986c5e4a7ee979839658c228f660e1e0c"
   integrity sha512-RKB17JdQzvECfnVj9yDZsiYn3vH0eyva/ZbrCZXZR0qp66PBRhtg4F9yJcJTWYT5Adadi+x4NoG53BxKHwIYLQ==
+
+react-visibility-sensor@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
+  integrity sha512-cTUHqIK+zDYpeK19rzW6zF9YfT4486TIgizZW53wEZ+/GPBbK7cNS0EHyJVyHYacwFEvvHLEKfgJndbemWhB/w==
+  dependencies:
+    prop-types "^15.7.2"
 
 react@^18.2.0:
   version "18.2.0"
