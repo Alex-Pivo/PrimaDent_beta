@@ -42,7 +42,8 @@
             height: 246%;
             position: static;
             background: url("../4Block/tooth/1.png");
-            background-position: center -420px;
+            background-position: center;
+            background-position-y: -420px;
             background-size: cover;
             border-radius: 10px;
             z-index: 2;
@@ -108,7 +109,8 @@
               width: 1300px;
               height: 200%;
               position: static;
-              background-position: center -280px;
+              background-position: center;
+              background-position-y: -280px;
               background-size: cover;
               border-radius: 10px;
               z-index: 2;
@@ -147,7 +149,8 @@
               width: 1200px;
               height: 236%;
               position: static;
-              background-position: center -320px;
+              background-position: center;
+              background-position-y: -320px;
               background-size: cover;
               border-radius: 10px;
               z-index: 2;
@@ -481,7 +484,8 @@
             .photoTooth {
               width: 500px;
               height: 150%;
-              background-position: center -70px;
+              background-position: center;
+              background-position-y: -70px;
             }
           }
           .circle {
@@ -518,7 +522,8 @@
             .photoTooth {
               width: 420px;
               height: 180%;
-              background-position: center -70px;
+              background-position: center;
+              background-position-y: -70px;
             }
           }
           .circle {
@@ -555,7 +560,8 @@
             .photoTooth {
               width: 365px;
               height: 180%;
-              background-position: center -66px;
+              background-position: center;
+              background-position-y: -66px;
             }
           }
           .circle {
@@ -579,7 +585,8 @@
             .photoTooth {
               width: 306px;
               height: 160%;
-              background-position: center -46px;
+              background-position: center;
+              background-position-y: -46px;
             }
           }
           .circle {
