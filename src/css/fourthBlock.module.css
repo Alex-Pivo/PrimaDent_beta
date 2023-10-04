@@ -89,6 +89,7 @@
   height: 65px;
   border-radius: 5px;
   background-color: #305381;
+  -webkit-appearance: none;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
@@ -345,6 +346,20 @@
 @media (max-width: 482px) {
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 500px;
+    height: 150%;
+    background-position: center;
+    background-position-y: -70px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 70px;
+    height: 70px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media (max-width: 434px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 420px;
     height: 150%;
     background-position: center;
     background-position-y: -70px;
