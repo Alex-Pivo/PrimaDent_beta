@@ -288,6 +288,14 @@
   }
 }
 @media screen and (max-width: 701px) {
+  .fourthBlock .container {
+    width: 91.4%;
+  }
+  .fourthBlock .container .photos {
+    height: 323px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 700px;
     height: 206%;
@@ -298,6 +306,14 @@
     height: 80px;
     top: 38%;
     left: 44.5%;
+  }
+  .fourthBlock .container .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #f9f9f9;
   }
 }
 @media screen and (max-width: 652px) {
