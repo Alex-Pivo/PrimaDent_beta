@@ -445,6 +445,9 @@
     line-height: 24px;
     text-align: center;
   }
+  .portfolio .photosBox .photos {
+    height: 100%;
+  }
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 420px;
     height: 100%;
