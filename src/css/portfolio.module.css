@@ -399,7 +399,7 @@
     width: 5px;
   }
 }
-@media (max-width: 482px) {
+@media screen and (max-width: 482px) {
   .portfolio .photosBox .photos {
     height: 300px;
   }
@@ -423,7 +423,7 @@
     left: 44.5%;
   }
 }
-@media (max-width: 426px) {
+@media screen and (max-width: 426px) {
   .portfolio .titleBox {
     height: 130px;
     width: 91.4%;
@@ -468,7 +468,7 @@
     font-size: 8px;
   }
 }
-@media (max-width: 376px) {
+@media screen and (max-width: 376px) {
   .portfolio .photosBox {
     height: 255px;
   }
@@ -498,7 +498,7 @@
     font-size: 8px;
   }
 }
-@media (max-width: 341px) {
+@media screen and (max-width: 341px) {
   .portfolio .photosBox {
     height: 255px;
   }

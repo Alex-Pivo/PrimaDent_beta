@@ -546,7 +546,7 @@
   }
 }
 
-@media (max-width: 482px) {
+@media screen and (max-width: 482px) {
   .portfolio {
     .photosBox {
       .photos {
@@ -579,7 +579,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media screen and (max-width: 426px) {
   .portfolio {
     .titleBox {
       height: 130px;
@@ -634,7 +634,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media screen and (max-width: 376px) {
   .portfolio {
     .photosBox {
       height: 255px;
@@ -671,7 +671,7 @@
   }
 }
 
-@media (max-width: 341px) {
+@media screen and (max-width: 341px) {
   .portfolio {
     .photosBox {
       height: 255px;
