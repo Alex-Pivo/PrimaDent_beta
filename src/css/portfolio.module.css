@@ -112,7 +112,7 @@
   background-color: #f9f9f9;
 }
 
-@media (max-width: 1541px) {
+@media screen and (max-width: 1541px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 1300px;
     height: 100%;
@@ -132,7 +132,7 @@
     top: 38%;
   }
 }
-@media (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 1200px;
     height: 100%;
@@ -152,7 +152,7 @@
     top: 38%;
   }
 }
-@media (max-width: 1231px) {
+@media screen and (max-width: 1231px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 1000px;
     height: 100%;
@@ -172,7 +172,7 @@
     top: 38%;
   }
 }
-@media (max-width: 1101px) {
+@media screen and (max-width: 1101px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 890px;
     height: 100%;
@@ -192,7 +192,7 @@
     top: 38%;
   }
 }
-@media (max-width: 1025px) {
+@media screen and (max-width: 1025px) {
   .portfolio {
     padding-top: 128px;
   }
@@ -227,7 +227,7 @@
     font-size: 10px;
   }
 }
-@media (max-width: 891px) {
+@media screen and (max-width: 891px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 750px;
     height: 100%;
@@ -247,7 +247,7 @@
     top: 38%;
   }
 }
-@media (max-width: 821px) {
+@media screen and (max-width: 821px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 710px;
     height: 100%;
@@ -267,7 +267,7 @@
     top: 38%;
   }
 }
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .portfolio {
     padding-top: 150px;
   }
@@ -314,7 +314,7 @@
     top: 38%;
   }
 }
-@media (max-width: 701px) {
+@media screen and (max-width: 701px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 690px;
     height: 100%;
@@ -334,7 +334,7 @@
     top: 38%;
   }
 }
-@media (max-width: 652px) {
+@media screen and (max-width: 652px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 670px;
     height: 100%;
@@ -354,7 +354,7 @@
     top: 38%;
   }
 }
-@media (max-width: 602px) {
+@media screen and (max-width: 602px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 596px;
     height: 100%;
@@ -375,7 +375,7 @@
     left: 44.5%;
   }
 }
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
     width: 515px;
     height: 100%;
