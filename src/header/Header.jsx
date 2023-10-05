@@ -3,6 +3,8 @@ import "../css/header.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import logo from "/src/assets/img/logo.svg";
+
 function Header({ active, setModal }) {
   const [burgerActive, setBurgerActive] = useState(true);
   let [price, setPriceActive] = useState(true);
@@ -226,7 +228,7 @@ function Header({ active, setModal }) {
             onClick={() => aboutPersonal("mainScreen")}
             id="mainS"
           >
-            <div className={style.logo}></div>
+            <img src={logo} alt="" className={style.logo} />
           </button>
           <nav className={style.menu}>
             <ul className={style.list}>

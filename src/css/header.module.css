@@ -22,8 +22,6 @@
 .header .container .logo {
   width: 270px;
   height: 48px;
-  display: block;
-  background-image: url("../assets/img/logo.svg");
 }
 .header .container .menu {
   width: 74%;
@@ -120,9 +118,6 @@
   .header .container .logo {
     width: 200px;
     height: 35.5px;
-    background-image: url("../assets/img/logo.svg");
-    background-size: contain;
-    background-position: center;
   }
   .header .container .menu {
     width: 86%;
@@ -186,9 +181,6 @@
   .header .container .logo {
     width: 185px;
     height: 34px;
-    background-image: url("../assets/img/logo.svg");
-    background-size: contain;
-    background-position: center;
   }
   .header .container .menu {
     display: none;
@@ -361,9 +353,6 @@
   .header .container .logo {
     width: 185px;
     height: 34px;
-    background-image: url("../assets/img/logo.svg");
-    background-size: contain;
-    background-position: center;
   }
   .header .container .menu {
     display: none;
@@ -528,9 +517,6 @@
   .header .container .logo {
     width: 185px;
     height: 34px;
-    background-image: url("../assets/img/logo.svg");
-    background-size: contain;
-    background-position: center;
   }
   .header .container .menu {
     display: none;
