@@ -23,11 +23,10 @@
         width: 100%;
         height: 100%;
         display: block;
-        object-fit: contain;
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
       }
     }
 
@@ -126,16 +125,14 @@
       justify-content: space-between;
 
       .logoCont {
-        width: 240px;
-        height: 43px;
+        width: 243px;
+        height: 36px;
         .logo {
           width: 100%;
           height: 100%;
-          display: block;
-          object-fit: fill;
-          // background-position: center;
-          // background-repeat: no-repeat;
-          // background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
           // display: block;
         }
       }
@@ -209,7 +206,6 @@
           width: 100%;
           height: 100%;
           display: block;
-          object-fit: fill;
           // background-position: center;
           // background-repeat: no-repeat;
           // background-size: cover;
@@ -401,7 +397,7 @@
           width: 100%;
           height: 100%;
           display: block;
-          object-fit: fill;
+          // object-fit: fill;
           // background-position: center;
           // background-repeat: no-repeat;
           // background-size: cover;

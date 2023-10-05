@@ -3,7 +3,7 @@ import "../css/header.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import logo from "/src/assets/img/logo.svg";
+import logo from "/src/assets/img/logo.png";
 
 function Header({ active, setModal }) {
   const [burgerActive, setBurgerActive] = useState(true);
