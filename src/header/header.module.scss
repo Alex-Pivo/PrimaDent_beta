@@ -20,9 +20,10 @@
       width: 270px;
       height: 48px;
       display: block;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      object-fit: contain;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
       // display: block;
       // background-image: url("../assets/img/logo.svg");
     }
@@ -192,7 +193,7 @@
       justify-content: space-between;
 
       .logo {
-        width: 185px;
+        width: 189px;
         height: 34px;
         // background-image: url("../assets/img/logo.svg");
         // background-size: contain;

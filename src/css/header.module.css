@@ -23,9 +23,8 @@
   width: 270px;
   height: 48px;
   display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header .container .menu {
   width: 74%;
@@ -183,7 +182,7 @@
     justify-content: space-between;
   }
   .header .container .logo {
-    width: 185px;
+    width: 189px;
     height: 34px;
   }
   .header .container .menu {
