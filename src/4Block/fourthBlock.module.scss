@@ -569,7 +569,8 @@
         text-align: center;
       }
       .photos {
-        height: 223px;
+        // height: 223px;
+        height: 70%;
         width: 100%;
         margin-bottom: 50px;
         .photoLeft {
@@ -577,7 +578,7 @@
           .photoRight {
             height: 100%;
             .photoTooth {
-              width: 400px;
+              width: 420px;
               height: 180%;
               background-position: center;
               background-position-y: -70px;

@@ -444,7 +444,7 @@
     text-align: center;
   }
   .fourthBlock .container .photos {
-    height: 223px;
+    height: 70%;
     width: 100%;
     margin-bottom: 50px;
   }
@@ -455,7 +455,7 @@
     height: 100%;
   }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
-    width: 400px;
+    width: 420px;
     height: 180%;
     background-position: center;
     background-position-y: -70px;
