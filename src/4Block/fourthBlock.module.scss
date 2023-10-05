@@ -501,10 +501,13 @@
   .fourthBlock {
     .container {
       .photos {
+        height: 70%;
         .photoLeft {
+          height: 100%;
           .photoRight {
+            height: 100%;
             .photoTooth {
-              width: 500px;
+              width: 480px;
               height: 150%;
               background-position: center;
               background-position-y: -70px;

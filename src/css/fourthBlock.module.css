@@ -379,8 +379,17 @@
   }
 }
 @media screen and (max-width: 482px) {
+  .fourthBlock .container .photos {
+    height: 70%;
+  }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
-    width: 500px;
+    width: 480px;
     height: 150%;
     background-position: center;
     background-position-y: -70px;
