@@ -97,6 +97,9 @@
 }
 
 @media screen and (max-width: 1541px) {
+  .fourthBlock .container .photos {
+    height: 600px;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 1300px;
     height: 200%;
@@ -126,6 +129,9 @@
   .fourthBlock .container .title {
     margin-bottom: 60px;
   }
+  .fourthBlock .container .photos {
+    height: 600px;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 1200px;
     height: 236%;
@@ -151,6 +157,9 @@
   .fourthBlock {
     height: 725px;
     margin-bottom: 0px;
+  }
+  .fourthBlock .container .photos {
+    height: 600px;
   }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 1000px;
