@@ -206,7 +206,7 @@
     font-size: 20px;
   }
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 890px;
+    width: 870px;
     height: 100%;
     position: static;
     background-position: center 0px;
@@ -229,7 +229,7 @@
 }
 @media screen and (max-width: 891px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 750px;
+    width: 730px;
     height: 100%;
     position: static;
     background-position: center 0px;
@@ -249,7 +249,7 @@
 }
 @media screen and (max-width: 821px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 710px;
+    width: 700px;
     height: 100%;
     position: static;
     background-position: center 0px;
@@ -316,10 +316,11 @@
 }
 @media screen and (max-width: 701px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 690px;
+    width: 650px;
     height: 100%;
     position: static;
-    background-position: center 0px;
+    background-position: center;
+    background-position-y: -10px;
     background-size: cover;
     z-index: 2;
     transition: all 0.1s ease;
@@ -336,7 +337,7 @@
 }
 @media screen and (max-width: 652px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 670px;
+    width: 620px;
     height: 100%;
     position: static;
     background-position: center 0px;
@@ -356,7 +357,7 @@
 }
 @media screen and (max-width: 602px) {
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 596px;
+    width: 536px;
     height: 100%;
     position: static;
     background-position: center 0px;
@@ -404,10 +405,10 @@
     height: 300px;
   }
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 477px;
+    width: 447px;
     height: 100%;
     position: static;
-    background-position: center -10px;
+    background-position: center 0px;
     background-size: cover;
     z-index: 2;
     transition: all 0.1s ease;
@@ -449,10 +450,58 @@
     height: 100%;
   }
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 420px;
+    width: 400px;
     height: 100%;
     position: static;
-    background-position: center -60px;
+    background-position: center -56px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 36%;
+    left: 42.5%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .circleText {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 416px) {
+  .portfolio .titleBox {
+    height: 130px;
+    width: 91.4%;
+  }
+  .portfolio .titleBox .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .portfolio .titleBox .text {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .portfolio .photosBox {
+    width: 91.4%;
+    height: 255px;
+  }
+  .portfolio .photosBox .name {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .portfolio .photosBox .photos {
+    height: 100%;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 380px;
+    height: 100%;
+    position: static;
+    background-position: center -50px;
     background-size: cover;
     z-index: 2;
     transition: all 0.1s ease;
@@ -479,7 +528,7 @@
     width: 100%;
   }
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 365px;
+    width: 345px;
     height: 100%;
     position: static;
     background-position: center -40px;
@@ -509,7 +558,7 @@
     width: 100%;
   }
   .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
-    width: 336px;
+    width: 316px;
     height: 100%;
     position: static;
     background-position: center -30px;
