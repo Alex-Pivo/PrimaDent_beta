@@ -22,6 +22,9 @@
 .header .container .logo {
   width: 270px;
   height: 48px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .header .container .menu {
   width: 74%;
