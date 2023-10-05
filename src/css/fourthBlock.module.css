@@ -148,11 +148,16 @@
   }
 }
 @media screen and (max-width: 1231px) {
+  .fourthBlock {
+    height: 725px;
+    margin-bottom: 0px;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 1000px;
     height: 216%;
     position: static;
-    background-position: center -280px;
+    background-position: center;
+    background-position-y: -280px;
     background-size: cover;
     border-radius: 10px;
     z-index: 2;

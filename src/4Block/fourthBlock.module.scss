@@ -175,6 +175,8 @@
 
 @media screen and (max-width: 1231px) {
   .fourthBlock {
+    height: 725px;
+    margin-bottom: 0px;
     .container {
       .photos {
         .photoLeft {
@@ -184,7 +186,8 @@
               width: 1000px;
               height: 216%;
               position: static;
-              background-position: center -280px;
+              background-position: center;
+              background-position-y: -280px;
               background-size: cover;
               border-radius: 10px;
               z-index: 2;
