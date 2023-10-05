@@ -560,6 +560,7 @@
     .container {
       padding-top: 82px;
       width: 91.4%;
+      height: 100%;
       .title {
         margin-bottom: 40px;
         font-size: 28px;
@@ -572,9 +573,11 @@
         width: 100%;
         margin-bottom: 50px;
         .photoLeft {
+          height: 100%;
           .photoRight {
+            height: 100%;
             .photoTooth {
-              width: 420px;
+              width: 400px;
               height: 180%;
               background-position: center;
               background-position-y: -70px;

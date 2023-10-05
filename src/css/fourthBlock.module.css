@@ -434,6 +434,7 @@
   .fourthBlock .container {
     padding-top: 82px;
     width: 91.4%;
+    height: 100%;
   }
   .fourthBlock .container .title {
     margin-bottom: 40px;
@@ -447,8 +448,14 @@
     width: 100%;
     margin-bottom: 50px;
   }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
-    width: 420px;
+    width: 400px;
     height: 180%;
     background-position: center;
     background-position-y: -70px;
