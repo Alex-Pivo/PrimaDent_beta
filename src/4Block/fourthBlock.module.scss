@@ -181,7 +181,7 @@
     margin-bottom: 0px;
     .container {
       .photos {
-        height: 600px;
+        height: 70%;
         .photoLeft {
           height: 100%;
           .photoRight {
@@ -189,10 +189,10 @@
             .photoTooth {
               // width: 1580px;
               width: 1000px;
-              height: 216%;
+              height: 200%;
               position: static;
               background-position: center;
-              background-position-y: -280px;
+              background-position-y: -230px;
               background-size: cover;
               border-radius: 10px;
               z-index: 2;
