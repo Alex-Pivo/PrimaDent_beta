@@ -22,6 +22,7 @@
 .header .container .logo {
   width: 270px;
   height: 48px;
+  display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -120,7 +121,7 @@
   }
   .header .container .logo {
     width: 200px;
-    height: 35.5px;
+    height: 36px;
   }
   .header .container .menu {
     width: 86%;
@@ -519,7 +520,7 @@
   }
   .header .container .logo {
     width: 185px;
-    height: 34px;
+    height: 33px;
   }
   .header .container .menu {
     display: none;
