@@ -405,6 +405,15 @@
   .fourthBlock {
     height: 524px;
   }
+  .fourthBlock .container .photos {
+    height: 70%;
+  }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
   .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
     width: 420px;
     height: 150%;
