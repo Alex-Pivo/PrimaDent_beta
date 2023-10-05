@@ -25,7 +25,7 @@
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .header .container .menu {
   width: 74%;
