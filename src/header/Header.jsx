@@ -227,6 +227,7 @@ function Header({ active, setModal }) {
             style={{ backgroundColor: "transparent" }}
             onClick={() => aboutPersonal("mainScreen")}
             id="mainS"
+            className={style.logoCont}
           >
             <img src={logo} alt="" className={style.logo} />
           </button>
